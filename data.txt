@@ -1,0 +1,12 @@
+{
+    "name":"Arnold Schwarzenegger",
+    "email":"pumpingiron@protein.com",
+    "userName":"TheTerminator",
+    "imageURL":"https://www.cheatsheet.com/wp-content/uploads/2020/06/arnold-schwarzenegger.jpg"
+}
+{
+    "name:"Jorge Mario Bergoglio",
+    "email":"iAmTheVatican@thechurch.com",
+    "userName":"ThePope",
+    "imageURL":"https://vocationnetwork.org/images/vn15/article_blog_images/loftus_popefrancis_890x395.jpg"
+}
