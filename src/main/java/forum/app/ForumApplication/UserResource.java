@@ -13,6 +13,7 @@ import java.util.UUID;
 //api layer
 @RestController
 @RequestMapping("/user")
+@CrossOrigin(origins = "*")
 public class UserResource {
     private final UserService userService;
 
@@ -25,6 +26,7 @@ public class UserResource {
     @GetMapping("/all")
     public ResponseEntity<List<User>> getAllUsers(){
         List<User> users = userService.findAllUsers();
+        System.out.println(users.toString());
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
