@@ -16,15 +16,17 @@ public class Posts implements Serializable {
     private String title;
     private String body;
     private String postByUser;
+    private String postDate;
 
     public Posts() {
     }
 
-    public Posts(String category, String title, String body, String postByUser) {
+     public Posts(String category, String title, String body, String postByUser, String postDate) {
         this.category = category;
         this.title = title;
         this.body = body;
         this.postByUser = postByUser;
+        this.postDate = postDate;
     }
 
     public int getId() {
@@ -65,5 +67,12 @@ public class Posts implements Serializable {
 
     public void setPostByUser(String postByUser) {
         this.postByUser = postByUser;
+    }
+    public String getPostDate() {
+        return postDate;
+    }
+
+    public void setPostDate(String postDate) {
+        this.postDate = postDate;
     }
 }
