@@ -12,8 +12,8 @@ import java.util.UUID;
 //server side that the world can see
 //api layer
 @RestController
-@RequestMapping("/posts")
-@CrossOrigin(origins = "*")
+@RequestMapping("/user")
+/*@CrossOrigin(origins = "*")*/
 public class UserResource {
     private final UserService userService;
 
