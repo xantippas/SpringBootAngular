@@ -20,7 +20,6 @@ public class UserService {
     }
 
     public User addUser(User user){
-        user.setId(UUID.randomUUID());
         return userRepo.save(user);
     }
 
@@ -36,7 +35,7 @@ public class UserService {
         return userRepo.findUserById(id);
     }*/
 
-    public void deleteUser(UUID id){
+    public void deleteUser(int id){
         userRepo.deleteUserById(id);
     }
 }

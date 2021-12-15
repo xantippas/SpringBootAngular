@@ -11,31 +11,28 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
-    private UUID id;
+    private int id;
 
     private String name;
     private String email;
-    private String userName;
-    private String imageURL;
+    private String username;
+    private String password;
 
     public User() {
     }
 
-    public User(String name,
-                String email,
-                String userName,
-                String imageURL) {
+    public User(String name, String email, String username, String password) {
         this.name = name;
         this.email = email;
-        this.userName = userName;
-        this.imageURL = imageURL;
+        this.username = username;
+        this.password = password;
     }
 
-    public UUID getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -55,19 +52,19 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public String getPassword() {
+        return password;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

@@ -7,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.UUID;
 
 //server side that the world can see
 //api layer
@@ -48,7 +47,7 @@ public class UserResource {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteUser(@PathVariable("id") UUID id){ //JSON format
+    public ResponseEntity<?> deleteUser(@PathVariable("id") int id){ //JSON format
         userService.deleteUser(id);
         return new ResponseEntity<>(HttpStatus.OK); //sends an OK to user that everything is well
     }

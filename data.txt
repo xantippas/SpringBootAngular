@@ -9,12 +9,6 @@
     "category":"Baptism",
     "postByUser":"The Pope",
     "body":"Francisco and Jacinta Marto — ages 9 and 7, respectively, at the time of the apparitions — died two years later of influenza, leaving their cousin Lucia dos Santos to share the secret messages with the world.
-
                 The pontiff held a mass in the shrine town Saturday to canonize the Marto siblings, making them the youngest saints who did not die as martyrs in the history of the Catholic Church.
-
-                Hundreds of thousands of pilgrims attended the celebrations as church groups, families and individuals flocked to Fatima, 90 miles north of Lisbon.
-
-                Dos Santos, who was nine when she experienced the visions, grew up to become a Carmelite nun and lived until the age of 95.
-
                 She later revealed the prophecies in a memoir and a letter to the Vatican. She is currently on track for beatification, the first step towards becoming a saint. However, the process could not begin until after her death."
 }
