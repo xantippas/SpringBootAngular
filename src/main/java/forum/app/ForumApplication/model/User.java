@@ -2,11 +2,9 @@ package forum.app.ForumApplication.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.UUID;
 
 @Entity
 @Table(name = "user")
-//can add table annotation here to show in terminal what the user is
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

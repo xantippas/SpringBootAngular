@@ -2,7 +2,6 @@ package forum.app.ForumApplication.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDate;
 
 @Entity
 @Table(name = "posts")

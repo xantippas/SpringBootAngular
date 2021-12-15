@@ -24,16 +24,16 @@ public class PostsResource {
         return new ResponseEntity<>(posts, HttpStatus.OK);
     }
 
-    @PostMapping("/add") //post info in backend
+    @PostMapping("/add")
     public ResponseEntity<Posts> addPost(@RequestBody Posts posts) { //JSON format
         Posts newPost = postsService.addPost(posts);
-        return new ResponseEntity<>(newPost, HttpStatus.CREATED); //created something on the server which this is doing
+        return new ResponseEntity<>(newPost, HttpStatus.CREATED);
     }
 
     /*@PutMapping("/update")
     public ResponseEntity<User> updateUser(@RequestBody User user) { //JSON format
         User newUser = userService.updateUser(user);
-        return new ResponseEntity<>(newUser, HttpStatus.OK); //created something on the server which this is doing
+        return new ResponseEntity<>(newUser, HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")

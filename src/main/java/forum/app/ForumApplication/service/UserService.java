@@ -6,9 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 
-//service layer access all the data on the server
+//service layer, access all the data on the server
 @Service
 public class UserService {
 

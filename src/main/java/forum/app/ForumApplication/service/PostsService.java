@@ -18,7 +18,6 @@ public class PostsService {
         }
 
         public Posts addPost(Posts posts){
-
             return postsRepo.save(posts);
         }
 

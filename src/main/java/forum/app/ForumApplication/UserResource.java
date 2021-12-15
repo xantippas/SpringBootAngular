@@ -8,11 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//server side that the world can see
 //api layer
 @RestController
 @RequestMapping("/user")
-/*@CrossOrigin(origins = "*")*/
 public class UserResource {
     private final UserService userService;
 
@@ -28,22 +26,22 @@ public class UserResource {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
-/*    @GetMapping("find/{id}")
+    /*@GetMapping("find/{id}")
     public ResponseEntity<List<User>> getUserById(@PathVariable("id") UUID id){
         User user = userService.findUserById();
         return new ResponseEntity<>(user, HttpStatus.OK);
     }*/
 
-    @PostMapping("/add") //post info in backend
+    @PostMapping("/add")
     public ResponseEntity<User> addUser(@RequestBody User user){ //JSON format
         User newUser = userService.addUser(user);
-        return new ResponseEntity<>(newUser, HttpStatus.CREATED); //created something on the server which this is doing
+        return new ResponseEntity<>(newUser, HttpStatus.CREATED);
     }
 
     @PutMapping("/update")
     public ResponseEntity<User> updateUser(@RequestBody User user){ //JSON format
         User newUser = userService.updateUser(user);
-        return new ResponseEntity<>(newUser, HttpStatus.OK); //created something on the server which this is doing
+        return new ResponseEntity<>(newUser, HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")
